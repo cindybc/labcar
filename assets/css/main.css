@@ -13,3 +13,10 @@ Color gris (footer): #2b2b2b */
 .second-section{
 	background-color: #f7b617;
 }
+
+.third-section{
+	background-image: url(../img/conduce.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
