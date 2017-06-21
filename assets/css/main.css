@@ -10,12 +10,14 @@ Color gris (footer): #2b2b2b */
 	background-size: cover;
 }
 
-.second-section{
+.second-section, .four-section{
 	background-color: #f7b617;
+	color: #fff;
 }
 
 .third-section{
 	background-image: url(../img/conduce.jpg);
+	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
