@@ -1,16 +1,44 @@
 /*Color-lab: #f7b617
 Color gris (footer): #2b2b2b */
+.white{
+	background-color: #fff;
+	color: #2b2b2b;
+	font-weight: bold;
+}
 
+h1{
+	font-weight: bold;
+}
 .first-section{
 	background-image: url(../img/taxi.jpg);
 	width: 100%;
 	height: 100vh;
-	background-position: center;
+	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.second-section, .four-section{
+.navbar-inverse{
+	border-color: #fff;
+	padding: 20px;
+}
+
+ .navbar-inverse .nav li a{
+	color:  #2b2b2b;
+}
+
+.navbar-inverse .nav li:hover{
+	background-color: #f7b617;
+}
+.hero{
+	width: 40%;
+    position: relative;
+    margin-right: 0;
+    padding: 40px;
+    margin-top: 8%;
+}
+
+.second-section, .four-section, .hero{
 	background-color: #f7b617;
 	color: #fff;
 }
