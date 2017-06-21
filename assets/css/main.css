@@ -13,6 +13,11 @@ h1, h2{
 h3,h4{
 	margin-top: 40px;
 }
+.amarilloW{
+	background-color: #f7b617;
+	color: #fff;
+}
+/*SECCION 1*/
 .first-section{
 	background-image: url(../img/taxi.jpg);
 	width: 100%;
@@ -43,10 +48,6 @@ h3,h4{
     margin-top: 8%;
 }
 /*SECCION 2*/
-.amarilloW{
-	background-color: #f7b617;
-	color: #fff;
-}
 
 .info{
 	padding: 40px 10px;
@@ -68,6 +69,21 @@ h3,h4{
 .conduce{
 	margin-top: 0;
 	padding-top: 8%;
+}
+
+/*SECCION 4*/
+
+.four-section{
+	padding: 100px;
+}
+
+.form-control{
+	width: 90%;
+	color: #fff;
+	display: inline;
+	margin: 20px 0;
+	background-color: transparent;
+	border-color: #fff;
 }
 footer{
 	background-color: #2b2b2b;
