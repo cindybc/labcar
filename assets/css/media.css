@@ -31,8 +31,9 @@
 	}
 	.footerIcon{
 		margin-left: 200px;
+		padding-top: 0;
 	}
-	.footerImg, .footerIcon{
+	.footerImg{
 		padding-top: 0;
 		margin-left:160px;
 	}
