@@ -85,11 +85,11 @@
     				<h4>Consulta la tarifa LabCar aquí</h4>
     				<div class="form-group">
     					<img src="assets/img/circulo.png" alt="circulo">
-    					<input type="text" class="form-control" value="Ingrese su punto de partida" onfocus="if(this.value=='Ingrese su punto de partida')this.value='';" onblur="if(this.value=='')this.value='Ingrese su punto de partida';">
+    					<input type="text" id="origin-input" class="form-control" value="Ingrese su punto de partida" onfocus="if(this.value=='Ingrese su punto de partida')this.value='';" onblur="if(this.value=='')this.value='Ingrese su punto de partida';">
     				</div>
     				<div class="form-group">	
     					<img src="assets/img/flecha.png" alt="flecha">
-    					<input type="text"  class="form-control" value="Ingrese su destino" onfocus="if(this.value=='Ingrese su destino')this.value='';" onblur="if(this.value=='')this.value='Ingrese su destino';">
+    					<input type="text" id="destination-input"  class="form-control" value="Ingrese su destino" onfocus="if(this.value=='Ingrese su destino')this.value='';" onblur="if(this.value=='')this.value='Ingrese su destino';">
     				</div>
     				<div class="text-center">
     				    <button type="button" class="btn white">¡TRAZAR RUTA!</button>
@@ -110,14 +110,14 @@
     			</div>
     		</div>
     		<div class="row">
-    			<div class="col-md-3 col-sm-6 col-xs-12 footerIcon">
+    			<div class="col-md-3 col-sm-5 col-xs-5 footerIcon">
     				<i class="fa fa-facebook" aria-hidden="true"></i>
     				<i class="fa fa-twitter" aria-hidden="true"></i>
     				<i class="fa fa-linkedin" aria-hidden="true"></i>
     				<i class="fa fa-apple" aria-hidden="true"></i>
     				<i class="fa fa-play" aria-hidden="true"></i>
     			</div>
-    			<div class="col-md-3 col-sm-6 col-xs-12">
+    			<div class="col-md-3 col-sm-5 col-xs-5">
     				<ul class="list-unstyled">
     					<li><a href="#">Viaja</a></li>
     					<li><a href="#">Conduce</a></li>
@@ -141,7 +141,7 @@
     				    <li><a href="#">Coders</a></li>
     				</ul>
     			</div>
-    			<div class="col-md-3 footerImg">
+    			<div class="col-md-3 col-sm-5 col-xs-5 footerImg">
     				<img src="assets/img/app-store.png" alt="app">
     				<img src="assets/img/google-play.png" alt="google">
     			</div>
@@ -157,6 +157,5 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src="assets/js/main.js"></script>
-</body> 
 </body>
 </html>
