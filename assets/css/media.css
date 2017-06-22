@@ -20,6 +20,13 @@
 	.conduce{
 		margin-left: 0;
 	}
+	.conduce h4, .conduce button{
+		font-size: 25px;
+	}
+	.footerImg, .footerIcon{
+		padding-top: 0;
+		margin-left:210px;
+	}
 }
 
 @media(min-width: 757px){
