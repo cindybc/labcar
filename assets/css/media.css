@@ -1,12 +1,21 @@
 @media (min-width: 200px) and (max-width: 756px){
 	.hero{
-		margin-left: 78px;
+		margin-left: 132px;
+		margin-top: 30%;
 	}
 	.block{
 		display: block;
 	}
 	.none{
 		display: none;
+	}
+	.info .row{
+		border: none;
+	}
+	.celu{
+		border: 1px solid #fff;
+		margin-bottom: 25px;
+		padding: 40px;
 	}
 }
 
