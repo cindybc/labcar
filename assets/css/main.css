@@ -40,12 +40,14 @@ h3,h4{
 	background-color: #f7b617;
 }
 .hero, .conduce{
-	background-color: rgba(0, 0, 0, 0.39);
-	color: #fff;
     width: 40%;
     margin-right: 0;
     padding: 40px;
     margin-top: 8%;
+}
+.conduce{
+	background-color: rgba(0, 0, 0, 0.39);
+	color: #fff;
 }
 /*SECCION 2*/
 
@@ -85,6 +87,27 @@ h3,h4{
 	background-color: transparent;
 	border-color: #fff;
 }
+
+/*FOOTER*/
 footer{
 	background-color: #2b2b2b;
+	color: #fff;
+	padding: 80px;
+}
+
+.footerIcon{
+    padding-top: 330px;
+}
+
+.footerImg{
+	padding-top: 190px;
+}
+
+.footerImg img, .footerIcon i{
+	padding: 5px;
+}
+
+.list-unstyled li a{
+	line-height: 3.0;
+	color: #fff;
 }
