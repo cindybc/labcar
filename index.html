@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Labcar</title>
+    <link rel="icon" type="image/png" href='assets/img/taxi1.png'/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/e996786236.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,36 +12,43 @@
 </head>
 <body>
 <!--NAV & HERO-->
-	<section class="first-section">
-		<nav class="navbar navbar-inverse white">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<img class="navbar-brand" src="assets/img/logo.png" alt="logo">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle</span>
-   	   	   	   	   	    <span class="icon-bar"></span>
-   	   	   	   	   	   	<span class="icon-bar"></span>
-   	   	   	   	   	   	<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="navbar-collapse collapse navbar-ex1-collapse">
-   	   	   	   	    <ul class="nav navbar-nav navbar-right">
-   	   	   	   	   	    <li><a href="#viaja">Viaja</a></li>
-   	   	   	   	   	    <li><a href="#conduce">Conduce</a></li>
-   	   	   	   	   	    <li><a href="#session">Inicia sesión</a></li>
-   	   	   	   	    </ul>
-   	   	   	   </div>
+	<nav class="navbar navbar-inverse white">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img class="navbar-brand" src="assets/img/logo.png" alt="logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle</span>
+   	   	   	   	   	<span class="icon-bar"></span>
+   	   	   	   	   	   <span class="icon-bar"></span>
+   	   	   	   	   	   <span class="icon-bar"></span>
+				</button>
 			</div>
-		</nav>
-		<div class="container">
+			<div class="navbar-collapse collapse navbar-ex1-collapse">
+   	   	   	   	<ul class="nav navbar-nav navbar-right">
+   	   	   	   	   	<li><a href="#viaja">Viaja</a></li>
+   	   	   	   	   	<li><a href="#conduce">Conduce</a></li>
+   	   	   	   	   	<li><a href="#session">Inicia sesión</a></li>
+   	   	   	   	</ul>
+   	   	   	</div>
+		</div>
+	</nav>
+    <section class="first-section">    
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-offset-7 col-md-5 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9 hero amarilloW">
 				    <h2 class="block">Comienza a</h2>
 					<h2 class="none">Disfruta del viaje</h2>
 					<h2 class="none">Eres dueño de tu tiempo</h2>
-					<h3>Viaja con <span><img src="assets/img/logo-blanco.png" alt="logo"></span></h3>
+                    <span class="none">
+                        <h3>Viaja con</h3>
+                        <img class="img" src="assets/img/logo-blanco.png" alt="logo">
+                    </span>
+                    <span class="block">
+                        <h3>Viajar con</h3>
+                        <img class="img" src="assets/img/logo-blanco.png" alt="logo">
+                    </span>
 					<p class="none">REGISTRATE</p>
-					<hr class="detalle none">
+					<span class="detalle none"></span>
 					<button type="button" class="btn white block">Descarga el app</button>
 					<button type="button" class="btn white none">Conviértete en conductor</button>
 				</div>
@@ -56,7 +64,7 @@
 					<img src="assets/img/celular.png" width="80%" alt="celular">
 				</div>
 				<div class="col-md-5 col-sm-12 col-xs-12 text-justify">
-				    <h3 class="block text-center">Llega a tu destino aún mas rapido</h3>
+				    <h4 class="block text-center">Llega a tu destino aún mas rapido</h4>
 					<h2 class="none">Descarga la nueva app</h2>
 					<h3 class="none">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</h3>
 					<h3 class="none">Con solo tocar un boton , un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente dónde ir.</h3>
@@ -66,7 +74,7 @@
 	</section>
 <!--TERCERA SECCION (CONDUCE)-->
     <section class="third-section">
-    	<div class="container">
+    	<div class="container-fluid">
     		<div class="row">
     			<div class="col-md-offset-7 col-md-5 col-sm-12 col-xs-12 conduce">
     				<h2>Conduce cuando quieras</h2>
@@ -94,9 +102,12 @@
     				<div class="text-center">
     				    <button type="button" id="ruta" class="btn white">¡TRAZAR RUTA!</button>
     				</div>
+                    <h3 id="tarifa"></h3>
     			</div>
     			<div class="col-md-offset-2 col-md-6 none">
-    				<div id="map">AKI IRA MI MAPA ¡ESTAMOS TRABAJANDO PARA ESO! :P</div>
+    				<div id="map">
+                    <!--AKI IRA EL MAPA -->            
+                    </div>
     			</div>
     		</div>
     	</div>
@@ -104,12 +115,11 @@
     <footer>
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-12 col-sm-12 col-xs-12">
+    			<div class="col-md-12 col-sm-12 col-xs-12 border">
     				<img src="assets/img/logo-blanco.png" alt="logo">
-    				<hr>
     			</div>
     		</div>
-    		<div class="row">
+    		<div class="row border">
     			<div class="col-md-3 col-sm-5 col-xs-5 footerIcon">
     				<i class="fa fa-facebook" aria-hidden="true"></i>
     				<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -146,7 +156,6 @@
     				<img src="assets/img/google-play.png" alt="google">
     			</div>
     		</div>
-    		<hr>
     		<div class="row">
     			<div class="col-md-12 col-sm-12 col-xs-12 text-center">
     				<p>© 2017 LabCar technologies Inc.</p>
@@ -156,6 +165,8 @@
     </footer>     
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPfXFggrcDf77p8lThwwT-TwPNZeMuIBQ&libraries=places&callback=initMap"
+        async defer></script>
  <script src="assets/js/main.js"></script>
 </body>
 </html>

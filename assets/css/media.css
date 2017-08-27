@@ -1,6 +1,5 @@
 @media (min-width: 200px) and (max-width: 756px){
 	.hero{
-		margin-left: 100px;
 		margin-top: 20%;
 	}
 	.block{
@@ -20,22 +19,26 @@
 	.four-section{
 		padding: 30px;
 	}
-	.conduce{
-		margin-left: 0;
-	}
+    h3{
+    	margin: 0;
+    	width: 100%;
+    }
+    .img{
+        margin-bottom: 30px;
+    }
 	.conduce h4, .conduce button{
-		font-size: 25px;
+		font-size: 20px;
 	}
 	footer{
 		padding: 40px 5px;
 	}
 	.footerIcon{
-		margin-left: 200px;
+		width: 55%;
 		padding-top: 0;
+		float: right;
 	}
 	.footerImg{
-		padding-top: 0;
-		margin-left:160px;
+        padding-top: 40px;
 	}
 	.footerImg img{
 		width: 150px;
